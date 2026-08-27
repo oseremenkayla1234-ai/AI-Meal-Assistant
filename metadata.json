@@ -1,0 +1,6 @@
+{
+  "name": "AI Meal Assistant",
+  "description": "Personal AI food companion for customized healthy meals, pantry cooking, weekly meal planning, and smart grocery lists.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

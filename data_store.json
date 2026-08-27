@@ -1,0 +1,376 @@
+{
+  "users": [
+    {
+      "id": "usr_admin",
+      "email": "admin@mealassist.ai",
+      "name": "Chef Eleanor Vance (Admin)",
+      "role": "admin",
+      "avatar_url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80",
+      "created_at": "2026-01-10T08:00:00.000Z",
+      "password_hash": "kayla@1234"
+    },
+    {
+      "id": "usr_kayla",
+      "email": "oseremenkayla1234@gmail.com",
+      "name": "Kayla",
+      "role": "user",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "created_at": "2026-02-01T10:00:00.000Z",
+      "password_hash": "kayla@1234"
+    },
+    {
+      "id": "usr_alex",
+      "email": "alex@example.com",
+      "name": "Alex Rivera",
+      "role": "user",
+      "avatar_url": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "created_at": "2026-02-01T12:00:00.000Z",
+      "password_hash": "kayla@1234"
+    },
+    {
+      "id": "usr_sarah",
+      "email": "sarah@example.com",
+      "name": "Sarah Chen (Plant-Based)",
+      "role": "user",
+      "avatar_url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80",
+      "created_at": "2026-02-10T14:30:00.000Z",
+      "password_hash": "kayla@1234"
+    },
+    {
+      "id": "usr_marcus",
+      "email": "marcus@example.com",
+      "name": "Marcus Vance (Fitness/Keto)",
+      "role": "user",
+      "avatar_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+      "created_at": "2026-02-14T09:15:00.000Z",
+      "password_hash": "kayla@1234"
+    }
+  ],
+  "user_profiles": {
+    "usr_admin": {
+      "user_id": "usr_admin",
+      "age_group": "40s",
+      "dietary_preference": "mediterranean",
+      "cooking_skill": "advanced",
+      "typical_cooking_time": 30,
+      "budget_preference": "high",
+      "meal_goals": [
+        "Balanced Nutrition",
+        "Culinary Excellence",
+        "Seasonal Variety"
+      ]
+    },
+    "usr_kayla": {
+      "user_id": "usr_kayla",
+      "age_group": "20s",
+      "dietary_preference": "mediterranean",
+      "cooking_skill": "intermediate",
+      "typical_cooking_time": 25,
+      "budget_preference": "medium",
+      "meal_goals": [
+        "Healthy eating",
+        "High protein",
+        "Quick & easy"
+      ]
+    },
+    "usr_alex": {
+      "user_id": "usr_alex",
+      "age_group": "20s",
+      "dietary_preference": "none",
+      "cooking_skill": "intermediate",
+      "typical_cooking_time": 25,
+      "budget_preference": "medium",
+      "meal_goals": [
+        "Eat healthier",
+        "High protein",
+        "Quick & easy"
+      ]
+    },
+    "usr_sarah": {
+      "user_id": "usr_sarah",
+      "age_group": "30s",
+      "dietary_preference": "vegetarian",
+      "cooking_skill": "intermediate",
+      "typical_cooking_time": 25,
+      "budget_preference": "medium",
+      "meal_goals": [
+        "Plant-forward",
+        "Fiber rich",
+        "Anti-inflammatory"
+      ]
+    },
+    "usr_marcus": {
+      "user_id": "usr_marcus",
+      "age_group": "30s",
+      "dietary_preference": "keto",
+      "cooking_skill": "beginner",
+      "typical_cooking_time": 20,
+      "budget_preference": "high",
+      "meal_goals": [
+        "High protein",
+        "Low carb",
+        "Muscle recovery"
+      ]
+    }
+  },
+  "user_food_preferences": [
+    {
+      "id": "pref_1",
+      "user_id": "usr_alex",
+      "food_name": "Peanuts",
+      "preference_type": "allergy"
+    },
+    {
+      "id": "pref_2",
+      "user_id": "usr_alex",
+      "food_name": "Shellfish",
+      "preference_type": "allergy"
+    },
+    {
+      "id": "pref_3",
+      "user_id": "usr_alex",
+      "food_name": "Cilantro",
+      "preference_type": "dislike"
+    },
+    {
+      "id": "pref_4",
+      "user_id": "usr_sarah",
+      "food_name": "Dairy",
+      "preference_type": "allergy"
+    },
+    {
+      "id": "pref_5",
+      "user_id": "usr_marcus",
+      "food_name": "Gluten",
+      "preference_type": "allergy"
+    }
+  ],
+  "saved_meals": [
+    {
+      "id": "meal_sample_1",
+      "user_id": "usr_alex",
+      "meal_name": "Golden Turmeric Lemon Chickpea Skillet",
+      "emoji": "🥘",
+      "image_url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=80",
+      "time_minutes": 20,
+      "difficulty": "Easy",
+      "nutrition_tags": [
+        "High Protein",
+        "Vegetable-Rich",
+        "Fiber-Dense",
+        "Budget-Friendly"
+      ],
+      "ingredients": [
+        "1 can (15 oz) chickpeas, rinsed and drained",
+        "2 cups fresh baby spinach",
+        "1 cup cherry tomatoes, halved",
+        "2 cloves garlic, minced",
+        "1 tsp ground turmeric",
+        "1/2 tsp ground cumin",
+        "1 tbsp extra virgin olive oil",
+        "Juice of 1/2 fresh lemon",
+        "1/4 cup crumbled feta cheese (optional)",
+        "Salt and freshly ground black pepper to taste"
+      ],
+      "instructions": [
+        "Warm olive oil in a wide skillet over medium heat. Add minced garlic and sauté for 1 minute until fragrant.",
+        "Add drained chickpeas, ground turmeric, cumin, salt, and pepper. Sauté for 6-8 minutes until chickpeas are golden and slightly crisp.",
+        "Toss in cherry tomatoes and baby spinach. Cook for 2-3 minutes until spinach is tender and tomatoes soften.",
+        "Remove from heat, squeeze fresh lemon juice over the skillet, and top with crumbled feta if desired. Serve warm."
+      ],
+      "why_this_meal": "Packed with plant-based protein and anti-inflammatory turmeric, this vibrant one-skillet dish comes together in 20 minutes with zero hassle.",
+      "substitutions": [
+        {
+          "if_missing": "Chickpeas",
+          "try_instead": "White cannellini beans or firm cubed tofu"
+        },
+        {
+          "if_missing": "Fresh spinach",
+          "try_instead": "Chopped kale, Swiss chard, or frozen peas"
+        },
+        {
+          "if_missing": "Feta cheese",
+          "try_instead": "Nutritional yeast or toasted pumpkin seeds"
+        }
+      ],
+      "category": "dinner",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    },
+    {
+      "id": "meal_sample_2",
+      "user_id": "usr_alex",
+      "meal_name": "Avocado & Jammy Egg Sourdough Toast",
+      "emoji": "🥑",
+      "image_url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=80",
+      "time_minutes": 12,
+      "difficulty": "Easy",
+      "nutrition_tags": [
+        "Balanced",
+        "High Protein",
+        "Quick & Easy"
+      ],
+      "ingredients": [
+        "2 slices whole grain sourdough bread",
+        "2 large pasture-raised eggs",
+        "1 ripe avocado",
+        "1/2 tsp chili flakes",
+        "1/2 tsp flaky sea salt",
+        "1 tsp lemon juice",
+        "1 tbsp toasted sesame seeds"
+      ],
+      "instructions": [
+        "Bring a small pot of water to a gentle boil. Lower eggs in and cook for exactly 6.5 minutes for jammy yolks, then transfer to an ice bath for 2 minutes before peeling.",
+        "Toast the sourdough slices until golden and crisp.",
+        "In a small bowl, mash the ripe avocado with lemon juice, salt, and black pepper.",
+        "Spread the avocado generously over toast, slice jammy eggs in half and place on top. Garnish with chili flakes and sesame seeds."
+      ],
+      "why_this_meal": "Offers an optimal blend of healthy fats, complex carbs, and bioavailable protein to sustain energy through the morning.",
+      "substitutions": [
+        {
+          "if_missing": "Sourdough",
+          "try_instead": "Rye bread, gluten-free toast, or sweet potato toast"
+        },
+        {
+          "if_missing": "Eggs",
+          "try_instead": "Pan-seared smoky tempeh or seasoned hemp seeds"
+        }
+      ],
+      "category": "breakfast",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    },
+    {
+      "id": "meal_sample_3",
+      "user_id": "usr_alex",
+      "meal_name": "Pan-Seared Wild Salmon with Asparagus & Lemon Herb Quinoa",
+      "emoji": "🐟",
+      "image_url": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1000&q=80",
+      "time_minutes": 25,
+      "difficulty": "Medium",
+      "nutrition_tags": [
+        "Omega-3 Rich",
+        "High Protein",
+        "Gluten-Free",
+        "Heart Healthy"
+      ],
+      "ingredients": [
+        "2 wild salmon fillets (6 oz each)",
+        "1 bunch fresh asparagus, trimmed",
+        "1 cup cooked quinoa",
+        "2 tbsp extra virgin olive oil",
+        "1 lemon, sliced and juiced",
+        "2 cloves garlic, minced",
+        "Fresh dill and parsley, chopped",
+        "Sea salt and black pepper"
+      ],
+      "instructions": [
+        "Pat salmon fillets dry with paper towel. Season both sides generously with salt, pepper, and dill.",
+        "Heat 1 tbsp olive oil in a heavy skillet over medium-high heat. Sear salmon skin-side down for 4-5 minutes, flip and cook 3 more minutes.",
+        "In the same pan, toss asparagus with remaining olive oil and minced garlic until tender-crisp (3-4 minutes).",
+        "Serve salmon over warm lemon-herb quinoa alongside seared asparagus and fresh lemon wedges."
+      ],
+      "why_this_meal": "High in clean marine omega-3 fatty acids and complete plant proteins for lasting cardiovascular and cognitive wellness.",
+      "substitutions": [
+        {
+          "if_missing": "Wild salmon",
+          "try_instead": "Rainbow trout, barramundi, or thick-cut tofu fillets"
+        },
+        {
+          "if_missing": "Quinoa",
+          "try_instead": "Brown rice, farro, or cauliflower rice"
+        }
+      ],
+      "category": "dinner",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    }
+  ],
+  "meal_plan_entries": [
+    {
+      "id": "plan_init_1",
+      "user_id": "usr_alex",
+      "day_date": "2026-08-27",
+      "meal_slot": "dinner",
+      "meal_id": "meal_sample_1",
+      "meal": {
+        "id": "meal_sample_1",
+        "meal_name": "Golden Turmeric Lemon Chickpea Skillet",
+        "emoji": "🥘",
+        "image_url": "https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1000&q=80",
+        "time_minutes": 20,
+        "difficulty": "Easy",
+        "nutrition_tags": [
+          "High Protein",
+          "Vegetable-Rich",
+          "Fiber-Dense"
+        ],
+        "ingredients": [
+          "1 can (15 oz) chickpeas, rinsed and drained",
+          "2 cups fresh baby spinach",
+          "1 cup cherry tomatoes, halved",
+          "2 cloves garlic, minced",
+          "1 tsp ground turmeric",
+          "1 tbsp extra virgin olive oil"
+        ],
+        "instructions": [
+          "Sauté garlic and chickpeas in olive oil with turmeric.",
+          "Add tomatoes and spinach until tender."
+        ],
+        "why_this_meal": "Fast, hearty dinner.",
+        "substitutions": []
+      }
+    }
+  ],
+  "grocery_list_items": [
+    {
+      "id": "groc_1",
+      "user_id": "usr_alex",
+      "item_name": "Spinach",
+      "category": "produce",
+      "checked": false,
+      "source": "saved",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    },
+    {
+      "id": "groc_2",
+      "user_id": "usr_alex",
+      "item_name": "Chickpeas (canned)",
+      "category": "pantry",
+      "checked": false,
+      "source": "saved",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    },
+    {
+      "id": "groc_3",
+      "user_id": "usr_alex",
+      "item_name": "Pasture-raised Eggs",
+      "category": "protein",
+      "checked": true,
+      "source": "manual",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    },
+    {
+      "id": "groc_4",
+      "user_id": "usr_alex",
+      "item_name": "Fresh Avocados",
+      "category": "produce",
+      "checked": false,
+      "source": "planner",
+      "created_at": "2026-08-27T09:31:50.042Z"
+    }
+  ],
+  "announcements": [
+    {
+      "id": "ann_1",
+      "title": "Spring Nutrition Focus: Seasonal Greens & Omega-3s",
+      "message": "Gemini meal generation now includes spring micro-season ingredients like wild asparagus, fresh mint, and citrus herb dressings.",
+      "date": "2026-03-01",
+      "type": "tip"
+    },
+    {
+      "id": "ann_2",
+      "title": "Admin Allergy Safety Directive",
+      "message": "All hard allergen rules are enforced with 100% strict exclusion across all generated and curated meal plans.",
+      "date": "2026-03-02",
+      "type": "alert"
+    }
+  ]
+}
