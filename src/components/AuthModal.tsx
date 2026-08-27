@@ -75,12 +75,16 @@ export const AuthModal: React.FC<AuthModalProps> = ({
     }
   };
 
-  const handleQuickDemoLogin = async (demoType: 'alex' | 'sarah' | 'marcus' | 'admin') => {
+  const handleQuickDemoLogin = async (demoType: 'kayla' | 'alex' | 'sarah' | 'marcus' | 'admin') => {
     setIsLoading(true);
     setErrorMessage(null);
     try {
       if (demoType === 'admin') {
         const session = await api.adminLogin('admin@mealassist.ai', 'kayla@1234');
+        onAuthSuccess(session);
+        onClose();
+      } else if (demoType === 'kayla') {
+        const session = await api.login('oseremenkayla1234@gmail.com', 'kayla@1234', 'user');
         onAuthSuccess(session);
         onClose();
       } else if (demoType === 'alex') {
@@ -365,7 +369,27 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             </span>
           </div>
 
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <button
+              type="button"
+              id="demo-user-kayla"
+              onClick={() => handleQuickDemoLogin('kayla')}
+              className="flex items-center gap-2 p-2 rounded-xl border border-slate-200 hover:border-emerald-400 bg-slate-50 hover:bg-emerald-50/50 text-left transition-all group"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80"
+                alt="Kayla"
+                referrerPolicy="no-referrer"
+                className="w-7 h-7 rounded-full object-cover border border-slate-200"
+              />
+              <div className="min-w-0">
+                <div className="text-xs font-bold text-slate-900 truncate group-hover:text-emerald-700">
+                  Kayla
+                </div>
+                <div className="text-[10px] text-slate-500 truncate">oseremenkayla...</div>
+              </div>
+            </button>
+
             <button
               type="button"
               id="demo-user-alex"
@@ -430,7 +454,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               type="button"
               id="demo-user-admin"
               onClick={() => handleQuickDemoLogin('admin')}
-              className="flex items-center gap-2 p-2 rounded-xl border border-slate-300 hover:border-slate-800 bg-slate-900 text-white text-left transition-all group shadow-xs"
+              className="flex items-center gap-2 p-2 rounded-xl border border-slate-300 hover:border-slate-800 bg-slate-900 text-white text-left transition-all group shadow-xs col-span-2 sm:col-span-2"
             >
               <img
                 src={REALISTIC_AVATARS.admin}
@@ -440,7 +464,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
               />
               <div className="min-w-0">
                 <div className="text-xs font-bold text-amber-300 truncate">Chef Admin</div>
-                <div className="text-[10px] text-slate-400 truncate">Administrator</div>
+                <div className="text-[10px] text-slate-400 truncate">admin@mealassist.ai</div>
               </div>
             </button>
           </div>
